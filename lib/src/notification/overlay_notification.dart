@@ -26,8 +26,8 @@ OverlaySupportEntry showOverlayNotification(
       if (position == NotificationPosition.bottom ||
           position == NotificationPosition.rightBottom)
         alignment = MainAxisAlignment.end;
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 50.0),
+      return Align(
+        alignment: Alignment.bottomRight,
         child: Column(
           mainAxisAlignment: alignment,
           children: <Widget>[
